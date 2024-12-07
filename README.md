@@ -151,7 +151,7 @@ This repository contains a Dockerfile that automates the process of building and
 - [Usage](#usage)
 - [Cleaning Up](#cleaning-up)
 - [Notes](#notes)
-- [Performance considerations](#performance considerations)
+- [Performance considerations](#performance-considerations)
 
 ## Prerequisites
 
