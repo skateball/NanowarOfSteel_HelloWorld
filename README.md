@@ -18,8 +18,8 @@ Some important notes:
 3. ```tizio``` and ```foo``` are very close friends.
 4. ```pippo``` isn't ```tizio```'s friend, but he's been flirting with ```foo```.
 5. In the comments "**manage**" should be renamed as "**handle**" (we all wish "manage" was the right word, but it's not).
-6. The constructor argument is used to control the number of executions. However, It may be completely useless if the execution is canceled by ```Joey De Caio```.
-7. "_Write once, run anywhere_" means lityerally anywhere (e.g. Hellfest).
+6. The constructor argument is used to control the number of executions. However, It may be completely useless if the execution is cancelled by ```Joey De Caio```.
+7. "_Write once, run anywhere_" means literally anywhere (e.g. Hellfest).
 8. ```songRefrain()``` identifies itself as a void method.
 
 Below you will find a super detailed guide to the program, of course written with ChatGPT.
@@ -141,6 +141,32 @@ This will print "Hello World!" three times.
   
 - **Extending the Program**: You can extend the program by adding more features like exception handling, more complex message outputs, or additional loops and conditionals.
 
+# JBang Guide
+
+This repository contains a jbang catalog that allows you to run the HelloWorld program with the command `jbang hello@nanowarofsteel/hello`.
+
+## Table of Contents
+- [Prerequisites](#jbang-prerequisites)
+- [Usage](#jbang-usage)
+
+## JBang Prerequisites
+
+To use the jbang catalog, you need to have jbang installed. You can install jbang [here](https://www.jbang.dev/download/).
+
+## JBang Usage
+
+To run the HelloWorld program with `jbang`, you can use the following command directly without cloning the repository:
+
+```bash
+jbang hello@nanowarofsteel/HelloWorld
+```
+
+If you have cloned the repository, you can run the program with the following command:
+
+```bash
+jbang hello
+```
+
 # Docker Guide
 
 This repository contains a Dockerfile that automates the process of building and running a Java application using Maven. The Docker image is built in two stages: the first stage builds the application with Maven, and the second stage runs the application with a minimal OpenJDK 17 image.
@@ -151,6 +177,7 @@ This repository contains a Dockerfile that automates the process of building and
 - [Usage](#usage)
 - [Cleaning Up](#cleaning-up)
 - [Notes](#notes)
+- [Performance considerations](#performance-considerations)
 
 ## Prerequisites
 
@@ -207,6 +234,54 @@ docker rmi my-java-app    # Remove the image
 
 - **Multi-stage build**: The Dockerfile uses a multi-stage build to ensure the final image is small and optimized for running the application. The first stage uses the Maven image to build the application, and the second stage uses a slim JDK image to run it.
 - **JAR file location**: The final JAR file is copied from the `/target` directory in the Maven build stage to the working directory in the runtime stage (`/app`).
+
+## Performance considerations
+
+In order to achieve better performance experience this code live.
+Due to resource allocation issues there are only limited possibilities:
+
+- FRIDAY 21 FEBRUARY 2025: Vienna, Austria - Simm City
+
+- SATURDAY 22 FEBRUARY 2025: Leipzig, Germany - Hellraiser
+
+- SUNDAY 23 FEBRUARY 2025: Stuttgart, Germany - Halle, Im Wizemann
+
+- MONDAY 24 FEBRUARY 2025: Hamburg, Germany - Kaiserkeller (Grosse Freiheit)
+
+- WEDNESDAY 26 FEBRUARY 2025: Paris, France - La Machine du Moulin Rouge
+
+- THURSDAY 27 FEBRUARY 2025: Pratteln, Switzerland - Z7 Konzertfabrik
+
+- FRIDAY 28 FEBRUARY 2025: Villeurbanne, France - La Rayonne
+
+- SATURDAY 1 MARCH 2025: Lindau, Germany - Club Vaudeville
+
+- SUNDAY 2 MARCH 2025: Nuremberg, Germany - HIRSCH
+
+- TUESDAY 4 MARCH 2025: Aarhus, Denmark - VoxHall
+
+- WEDNESDAY 5 MARCH 2025: Tilburg, Netherlands - 013
+
+- THURSDAY 6 MARCH 2025: Frankfurt, Germany - Zoom Frankfurt
+
+- FRIDAY 7 MARCH 2025: Wrocław, Poland - Transformator
+
+- SATURDAY 8 MARCH 2025: Budapest, Hungary - Barba Negra
+
+- SUNDAY 9 MARCH 2025: Krakow, Poland - Kwadrat
+
+- MONDAY 10 MARCH 2025: Berlin, Germany - Columbia Theater
+
+- WEDNESDAY 12 MARCH 2025: Antwerp, Belgium - Kavka Zappa
+
+- FRIDAY 14 MARCH 2025: Drachten, Netherlands - Poppodium Iduna
+
+- SATURDAY 15 MARCH 2025: Strasbourg, France - Le Molodoï
+
+- FRIDAY 4 - SATURDAY 5 APRIL 2025: epic fest denmark 2025:  - Roskilde-Hallerne, Roskilde, Denmark
+
+Further information about upcomming resources can be found here: https://www.nanowar.it/live/
+
   
 ## Troubleshooting
 
