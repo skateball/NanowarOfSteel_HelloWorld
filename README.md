@@ -287,9 +287,11 @@ Due to resource allocation issues there are only limited possibilities:
 
 - SATURDAY 15 MARCH 2025: Strasbourg, France - Le Molodoï
 
+- SUNDAY 16 MARCH 2025: Munich, Germany - Backstage
+
 - FRIDAY 4 - SATURDAY 5 APRIL 2025: epic fest denmark 2025:  - Roskilde-Hallerne, Roskilde, Denmark
 
-Further information about upcoming resources can be found here: https://www.nanowar.it/live/
+Further information about upcoming resources can be found here: https://tour.nanowar.it
 
   
 ## Troubleshooting
