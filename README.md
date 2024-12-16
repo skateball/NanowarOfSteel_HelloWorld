@@ -47,7 +47,7 @@ The `HelloWorldMainLauncherClass` performs the following tasks:
 
 ## Prerequisites
 
-- Java Development Kit (JDK) 8 or higher.
+- Java Development Kit (JDK) 21 or higher.
 - A Java IDE (like IntelliJ IDEA, Eclipse, or NetBeans) or a command-line environment to compile and run the Java program.
 
 ## Installation
@@ -55,37 +55,28 @@ The `HelloWorldMainLauncherClass` performs the following tasks:
 To set up and run this project locally, follow these steps:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/NanowarOfSteel/HelloWorld.git
    ```
 
 2. Navigate into the project sources directory:
-   ```bash
-   cd HelloWorld/src/main/java
-   ```
 
-3. Compile the Java file:
    ```bash
-   javac it/nanowar/ofsteel/helloworld/HelloWorldMainLauncherClass.java
+   cd HelloWorld
    ```
-
-4. Run the program:
-   ```bash
-   javac it/nanowar/ofsteel/helloworld/HelloWorldMainLauncherClass.java
-   ```
-
-Alternatively, with Java 11 you can compile and run the project in one single step:
 
 3. Compile and run the Java file:
+
    ```bash
-   java it/nanowar/ofsteel/helloworld/HelloWorldMainLauncherClass.java
+   java src/main/java/it/nanowar/ofsteel/helloworld/HelloWorldMainLauncherClass.java
    ```
 
 ## Usage
 
 Once you run the program, you will see the following output:
 
-```
+```text
 Hello World Programmer Start
 Hello World!
 Hello World!
@@ -211,13 +202,14 @@ in the root directory of the project, then point out the location of the
 Dockerfile with the `-f` option:
 
 ```bash
-docker build -t my-java-app -f src/main/docker/helloworld.dockerfile .
+docker build -t my-java-app .
 ```
 
 This command will:
+
 1. Use an official Maven image to build the application.
 2. Package the application into a JAR file.
-3. Use a slim OpenJDK 17 image to run the resulting application (**kinda**).
+3. Use a slim OpenJDK 21 image to run the resulting application (**kinda**).
 
 ## Usage
 
